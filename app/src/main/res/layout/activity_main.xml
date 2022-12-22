@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnSomeAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Press Me"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivSomeAboutMe" />
+
+        <ImageView
+            android:id="@+id/ivSomeAboutMe"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSomeAboutMeLabel"
+            app:srcCompat="@drawable/downarrow" />
+
+        <TextView
+            android:id="@+id/tvLastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="My last name is"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvFirstName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvFirstName"
+            tools:text="First Name" />
+
+        <TextView
+            android:id="@+id/tvGreetingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Nice To Meet You!"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFirstName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="My first name is"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGreetingLabel" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvLastName"
+            app:layout_constraintStart_toStartOf="@+id/etFirstName"
+            tools:text="Last Name" />
+
+        <RadioGroup
+            android:id="@+id/rgStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTraitLabel">
+
+            <RadioButton
+                android:id="@+id/btnClassic"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arapey"
+                android:text="Classic"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="255dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <RadioButton
+                android:id="@+id/btnStylish"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alex_brush"
+                android:text="Stylish"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="255dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <RadioButton
+                android:id="@+id/btnBold"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Bold"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="146dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvTraitLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="I like to be "
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLastName" />
+
+        <TextView
+            android:id="@+id/tvSomeAboutMeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Something about me"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgStyle" />
+
+        <NumberPicker
+            android:id="@+id/npFavoriteColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteColor" />
+
+        <View
+            android:id="@+id/viewLeftSide"
+            android:layout_width="22dp"
+            android:layout_height="2150dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewRightSide"
+            android:layout_width="22dp"
+            android:layout_height="2150dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFavoriteColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Favorite Color?"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSomeAboutMe" />
+
+        <TextView
+            android:id="@+id/tvFavoriteActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="173dp"
+            android:text="Favorite Activity?"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/npFavoriteColor" />
+
+        <ImageView
+            android:id="@+id/ivActivity"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/viewRightSide"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteActivity"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <NumberPicker
+            android:id="@+id/npFavoriteActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivActivity"
+            app:layout_constraintEnd_toStartOf="@+id/ivActivity"
+            app:layout_constraintStart_toEndOf="@+id/viewLeftSide"
+            app:layout_constraintTop_toTopOf="@+id/ivActivity" />
+
+        <TextView
+            android:id="@+id/tvFavoriteMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="Favorite Movie?"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toStartOf="@+id/viewRightSide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivActivity" />
+
+        <NumberPicker
+            android:id="@+id/npFavoriteMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMovie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivMovie"
+            app:layout_constraintVertical_bias="0.45">
+
+        </NumberPicker>
+
+        <ImageView
+            android:id="@+id/ivMovie"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/viewRightSide"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/npFavoriteMovie"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteMovie"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <Button
+            android:id="@+id/btnSummaryLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginEnd="137dp"
+            android:text="launch Summary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/viewRightSide"
+            app:layout_constraintStart_toEndOf="@+id/viewLeftSide"
+            app:layout_constraintTop_toBottomOf="@+id/ivMovie" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

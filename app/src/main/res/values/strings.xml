@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CodePath-android-prework</string>
+
+    <string-array name="colorsPicker">
+        <item>White</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Magenta</item>
+        <item>Gray</item>
+        <item>Black</item>
+        <item>Cyan</item>
+    </string-array>
+
+    <string-array name="activitiesPicker">
+        <item>None</item>
+        <item>Sports</item>
+        <item>Travel</item>
+        <item>Eat</item>
+        <item>Video game</item>
+        <item>Read</item>
+        <item>Hike</item>
+        <item>Fish</item>
+    </string-array>
+
+    <string-array name="moviesPicker">
+        <item>None</item>
+        <item>The Dark Knight</item>
+        <item>Avengers End Game</item>
+        <item>The GodFather</item>
+        <item>MaxMax Fury Road</item>
+        <item>Die Hard</item>
+        <item>The Wolf of Wall Street</item>
+        <item>Fight Club</item>
+    </string-array>
+</resources>

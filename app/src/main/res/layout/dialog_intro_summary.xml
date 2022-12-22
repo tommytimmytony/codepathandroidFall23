@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="380dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <View
+        android:id="@+id/viewCover"
+        android:layout_width="280dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#FB0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSummaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="124dp"
+        android:gravity="center"
+        android:text="Summary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSummaryText"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/viewCover"
+        app:layout_constraintStart_toStartOf="@+id/viewCover"
+        app:layout_constraintTop_toBottomOf="@+id/tvSummaryLabel" />
+
+    <ImageView
+        android:id="@+id/ivLeftSideDialog"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/viewCover"
+        app:layout_constraintTop_toBottomOf="@+id/tvSummaryText"
+        app:srcCompat="@drawable/downarrow" />
+
+    <ImageView
+        android:id="@+id/ivRightSideDialog"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewCover"
+        app:layout_constraintTop_toBottomOf="@+id/tvSummaryText"
+        app:srcCompat="@drawable/downarrow" />
+
+    <Button
+        android:id="@+id/btnFareWell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="4dp"
+        android:text="Fare Well!"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCover"
+        app:layout_constraintEnd_toEndOf="@+id/viewCover"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRightSideDialog"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
