@@ -4,7 +4,7 @@ Submitted by: **Tommy Nguyen**
 
 **Hello App** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
 
-Time spent: **14** hours spent in total
+Time spent: **17** hours spent in total
 
 ## Required Features
 
@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='AndroidWalkthrough.gif' title='Video Walkthrough' width='250' height='250' alt='Video Walkthrough' />
+<img src='AndroidWalkthrough.gif' title='Video Walkthrough' width='400' height='600' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap  
