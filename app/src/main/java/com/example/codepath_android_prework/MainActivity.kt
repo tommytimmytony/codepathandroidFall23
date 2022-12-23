@@ -269,7 +269,7 @@ class MainActivity : AppCompatActivity() {
         when (slide) {
             0 -> {
                 ivSomeAboutMe.setImageResource(R.drawable.vietnamflag)
-                tvSomeAboutMe.text = "I'm was born in Vietnam"
+                tvSomeAboutMe.text = "I was born in Vietnam"
             }
             1 -> {
                 ivSomeAboutMe.setImageResource(R.drawable.texasflag)
