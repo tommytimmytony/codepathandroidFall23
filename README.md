@@ -4,7 +4,7 @@ Submitted by: **Tommy Nguyen**
 
 **Hello App** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
 
-Time spent: **17** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
@@ -46,7 +46,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2022] [Tommy Nguyen]
+    Copyright [2023] [Tommy Nguyen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
