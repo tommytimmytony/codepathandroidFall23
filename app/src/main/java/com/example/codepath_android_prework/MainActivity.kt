@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
             var favActivity = activities[chosenActivity]
             if (favActivity.equals("Video game") || favActivity.equals("Sports"))
-                favActivity = "play $favActivity"
+                favActivity = "play $favActivity "
 
             var summary =
                 "Hello, my name is ${etFirstName.text} ${etLastName.text}. I was born in " +
