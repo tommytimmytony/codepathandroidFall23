@@ -7,7 +7,7 @@ android {
     namespace 'com.example.codepath_android_prework'
     compileSdk 32
 
-    defaultConfig {
+    defaultConfig  {
         applicationId "com.example.codepath_android_prework"
         minSdk 23
         targetSdk 32
